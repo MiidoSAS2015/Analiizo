@@ -267,12 +267,13 @@ public class main extends Activity{
 
                         type = 3;
                     }
-                    AlertDialog("Ad", this.structure[counter].length+"");
+                    //AlertDialog("Ad", this.structure[counter].length+"");
 
-                    if(Integer.parseInt(this.structure[counter][13]) != 0){
-                        addListenerOnObject(object_tmp[0], type, 1,//Integer.parseInt(this.structure[counter][13])
-                                sf, Integer.parseInt((String) object_tmp[3]));
-                    }/*
+                    if(Integer.parseInt(this.structure[counter][12]) != 0){
+                       // addListenerOnObject(object_tmp[0], type, 1,//Integer.parseInt(this.structure[counter][13])
+                       //         sf, Integer.parseInt((String) object_tmp[3]));
+                    }
+                    /*
                     try {
                         if (sf > -1 ) {
                             rl_s[sf] = new RelativeLayout(this);

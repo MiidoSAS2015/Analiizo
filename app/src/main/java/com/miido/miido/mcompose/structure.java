@@ -61,6 +61,7 @@ public class structure {
         structure = new String[jArray.length()][13];
         for (int c = 0; c < jArray.length(); c++){
             Object tmp = jArray.get(c);
+            tmp = ((String) tmp).replace("}", "");
             String[] sTmp = tmp.toString().split(",");
             for (int i = 0; i < sTmp.length; i++) {
                 String[] s_tmp = sTmp[i].split(":");
@@ -68,11 +69,7 @@ public class structure {
             }
         }
         //options
-        //
         jArray = jStructure.getJSONArray("options");
-
-
-        //Toast.makeText(this.context, jarray.toString(), Toast.LENGTH_SHORT).show();
         options = new String[jArray.length()][0];
         for (int c = 0; c < jArray.length(); c++){
             JSONObject jObj_tmp = jArray.getJSONObject(c);
