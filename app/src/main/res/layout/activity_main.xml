@@ -1,0 +1,58 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main">
+
+    <!-- En este frame se generará toda la interfaz -->
+    <ScrollView
+        android:id="@+id/ParentSView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/parentFLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffe8e8e8" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="#FFFFFF">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="left|top"
+                    android:src="@drawable/analiizo_l_header"
+                    android:contentDescription="lHeader" />
+
+                <ImageView
+                    android:layout_width="222dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/analiizo_r_header"
+                    android:contentDescription="rHeader" />
+            </FrameLayout>
+        </TableLayout>
+    </ScrollView>
+
+    <!-- En este Frame se generará la cinta de opciones y configuracion !-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/superF">
+    </FrameLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sOptions"
+        android:text="^"
+        android:layout_gravity="bottom|right" />
+
+</FrameLayout>
